@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>APP Page</title>
+    <link rel="icon" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <style>
+        #login {
+            background-color: rgb(92, 184, 92);
+        }
+        
+        #login:hover {
+            background-color: #449D44;
+        }
+        
+        .jumbo {
+            margin-top: 50px;
+            background-image: url("unsplash.jpg");
+            padding: 80px;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #bigHead {
+            font-weight: 900;
+        }
+        
+        .eachCard {
+            float: left;
+        }
+        
+        .myCard {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .foot {
+            background-color: #00FFFF;
+            padding: 172px;
+        }
+        
+        #footImg {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id='navbar-lead'>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Download" tabindex="-1" aria-disabled="true">Download The App</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="email" placeholder="Email" aria-label="Email">
+                </form>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
+                    <a class="btn btn-primary" href="#Download" role="button">Login</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div data-spy="scroll " data-target="#navbar-lead " data-offset="0 ">
+        <div class="jumbotron jumbo " id='Home'>
+            <h1 class="display-4 center " id='bigHead'>My Awesome App!</h1>
+            <p class="lead center ">This is why YOU should download this fantastic app!</p>
+            <hr class="my-4 center ">
+            <p class='center'>Want to know more? Join our mailing list!</p>
+            <form class=" d-flex center ">
+                <div class="input-group-addon" style="height: 38px; width:40px; background-color:#ECEEEF; margin-right: -3px; display: flex; justify-content: center; align-items: center;">@</div>
+                <input class="form-control me-2 " type="email " placeholder="Your email " aria-label="Email " style="width:300px ">
+                <button class="btn btn-primary " type="button ">Sign up</button>
+            </form>
+        </div>
+        <br><br>
+        <h1 class='center'>Why This App Is Awesome</h1>
+        <h5 class='center'>Summary, once again, of your app's awesomeness</h5>
+
+        <br><br>
+        <div class="myCard " id='About'>
+            <div class="card eachCard " style="width: 23rem; ">
+                <img class="card-img-top " src="card.jpg " alt="Card image cap ">
+                <div class="card-body ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 " fill="currentColor " class="bi bi-bank " viewBox="0 0 16 16 " style="display: inline; ">
+                            <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8
+                    2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z "/>
+                          </svg>
+                    <h5 class="card-title " style="display: inline; ">Card title</h5>
+                    <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <div class="card eachCard " style="width: 23rem; ">
+                <img class="card-img-top " src="card.jpg " alt="Card image cap ">
+                <div class="card-body ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="35 " height="35 " fill="currentColor " class="bi bi-bicycle " viewBox="0 0 16 16 " style="display: inline; ">
+                            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5
+                    0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2
+                    2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z "/>
+                          </svg>
+                    <h5 class="card-title " style="display: inline; ">Card title</h5>
+                    <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+
+            <div class="card eachCard " style="width: 23rem; ">
+                <img class="card-img-top " src="card.jpg " alt="Card image cap ">
+                <div class="card-body ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 " fill="currentColor " class="bi bi-bank " viewBox="0 0 16 16 " style="display: inline; ">
+                            <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8
+                    2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z "/>
+                          </svg>
+                    <h5 class="card-title " style="display: inline; ">Card title</h5>
+                    <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action..</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="jumbotron foot " id='Download'>
+            <h2 class="center ">Download the app!</h2>
+            <p class="lead center ">Really, why should I download this app??</p>
+            <a href="index.html"><img src="download.png " height="65px " id='footImg'></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
